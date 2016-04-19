@@ -7,8 +7,9 @@
 //
 
 #import "ViewController.h"
-
+#import "CircleView.h"
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet CircleView *circleView;
 
 @end
 
@@ -17,6 +18,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+}
+- (IBAction)sliderValueChanged:(UISlider *)sender {
+    self.circleView.progress = sender.value;
 }
 
 - (void)didReceiveMemoryWarning {
