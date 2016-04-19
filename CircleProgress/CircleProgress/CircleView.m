@@ -11,8 +11,7 @@
 @implementation CircleView
 
 
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
+
 - (void)drawRect:(CGRect)rect {
     NSString *text = [NSString stringWithFormat:@"%.2f",self.progress];
     CGFloat viewW = rect.size.width;
